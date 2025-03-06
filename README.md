@@ -8,6 +8,6 @@ pip install -r requirements.txt
 
 ### Run Streamlit
 ```
-cd bike_sharing/dashboard/  
+cd dashboard  
 streamlit run dashboard.py
 ```

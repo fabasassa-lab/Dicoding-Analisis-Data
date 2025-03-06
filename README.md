@@ -11,3 +11,6 @@ pip install -r requirements.txt
 cd dashboard  
 streamlit run dashboard.py
 ```
+
+### URL Dashboard
+https://4a5xeq3d43fpf57fxqnzum.streamlit.app/

@@ -8,8 +8,8 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # load berkas hour_dash.csv day_dash.csv
-hour_df = pd.read_csv("hour_dash.csv", encoding="utf-8")
-day_df = pd.read_csv("day_dash.csv", encoding="utf-8")
+hour_df = pd.read_csv("./dashboard/hour_dash.csv")
+day_df = pd.read_csv("./dashboard/day_dash.csv")
 
 hour_df["dteday"] = pd.to_datetime(hour_df["dteday"])
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])

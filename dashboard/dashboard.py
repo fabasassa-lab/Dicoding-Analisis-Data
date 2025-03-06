@@ -8,8 +8,8 @@ from babel.numbers import format_currency
 sns.set(style='dark')
 
 # load berkas hour_dash.csv day_dash.csv
-hour_df = pd.read_csv("./dashboard/hour_dash.csv")
-day_df = pd.read_csv("./dashboard/day_dash.csv")
+hour_df = pd.read_csv("dashboard/hour_dash.csv")
+day_df = pd.read_csv("dashboard/day_dash.csv")
 
 hour_df["dteday"] = pd.to_datetime(hour_df["dteday"])
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
@@ -19,7 +19,7 @@ min_date = day_df['dteday'].min()
 max_date = day_df['dteday'].max()
 
 with st.sidebar:
-    st.image("bg.png")
+    st.image("dashboard/bg.png")
     start_date, end_date = st.date_input(
         label='Pilih **2** Rentang Waktu', min_value=min_date,
         max_value=max_date, value=[min_date, max_date]
